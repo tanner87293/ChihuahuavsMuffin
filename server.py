@@ -13,9 +13,9 @@ def predict(image):
     pred_class, pred_idx, outputs = model.predict(img)
     likelihood_is_chihuahua = outputs[1].item()
     if likelihood_is_chihuahua > 0.9:
-        return "Chihuahua"
-    elif likelihood_is_chihuahua < 0.1:
         return "Muffin"
+    elif likelihood_is_chihuahua < 0.1:
+        return "Chihuahua"
     else:
         return "Not sure... try another picture!"
 
