@@ -5,7 +5,7 @@ from fastai.vision.all import *
 
 
 
-model = load_learner('chihuahua_vs_muffins.pkl')
+model = load_learner('ChihuahuaVsMuffin.pkl')
 
 
 def predict(image):
